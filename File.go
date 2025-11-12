@@ -8,15 +8,15 @@ import (
 	"os"
 )
 
-func main() {
-	//writeFile()
-	//writeFileByLine()
-	//appendToFile()
-	//getFileInfo()
-	//listFiles()
-	createTempFilesAndDirectories()
-
-}
+//func main() {
+//	//writeFile()
+//	//writeFileByLine()
+//	//appendToFile()
+//	//getFileInfo()
+//	//listFiles()
+//	createTempFilesAndDirectories()
+//
+//}
 
 // 创建文件
 func createFile() {

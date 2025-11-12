@@ -35,6 +35,15 @@ func Divide(varDividee int, varDivider int) (result int, errorMsg string) {
 
 }
 
+func safeFunction() {
+	defer func() {
+		if r := recover(); r != nil {
+			fmt.Println("从 panic 中恢复:", r)
+		}
+	}()
+	panic("不可恢复的错误")
+}
+
 //func main() {
 //	// 正常情况
 //	if result, errorMsg := Divide(100, 10); errorMsg == "" {
@@ -44,4 +53,6 @@ func Divide(varDividee int, varDivider int) (result int, errorMsg string) {
 //	if _, errorMsg := Divide(100, 0); errorMsg != "" {
 //		fmt.Println("errorMsg is: ", errorMsg)
 //	}
+//	//使用 panic，recover 捕获错误
+//	safeFunction()
 //}
