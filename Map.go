@@ -21,4 +21,10 @@ func map1() {
 	// 遍历 Map
 	printMap(m)
 
+	m2 := make(map[string]int)
+	m2["1"] = 1
+	m2["2"] = 2
+	m2["3"] = 3
+	fmt.Println(m2)
+
 }
